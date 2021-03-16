@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E6913F7326012C4700808D01 /* Refeicao.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6913F7226012C4700808D01 /* Refeicao.swift */; };
+		E6913F7626012C6B00808D01 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6913F7526012C6B00808D01 /* Item.swift */; };
 		E6A767DA25A5E70D00B38299 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A767D925A5E70D00B38299 /* AppDelegate.swift */; };
 		E6A767DC25A5E70D00B38299 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A767DB25A5E70D00B38299 /* SceneDelegate.swift */; };
 		E6A767DE25A5E70D00B38299 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A767DD25A5E70D00B38299 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E6913F7226012C4700808D01 /* Refeicao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refeicao.swift; sourceTree = "<group>"; };
+		E6913F7526012C6B00808D01 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E69E817025A75E0200CBBCEA /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		E6A767D625A5E70D00B38299 /* eggplant-brownie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "eggplant-brownie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A767D925A5E70D00B38299 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +42,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E6913F6F26012C1000808D01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E6913F7226012C4700808D01 /* Refeicao.swift */,
+				E6913F7526012C6B00808D01 /* Item.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E6913F7026012C1900808D01 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E6A767DF25A5E70D00B38299 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E6913F7126012C2200808D01 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E6A767DD25A5E70D00B38299 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		E6A767CD25A5E70D00B38299 = {
 			isa = PBXGroup;
 			children = (
@@ -57,10 +86,11 @@
 		E6A767D825A5E70D00B38299 /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				E6913F7126012C2200808D01 /* Controller */,
+				E6913F7026012C1900808D01 /* Views */,
+				E6913F6F26012C1000808D01 /* Models */,
 				E6A767D925A5E70D00B38299 /* AppDelegate.swift */,
 				E6A767DB25A5E70D00B38299 /* SceneDelegate.swift */,
-				E6A767DD25A5E70D00B38299 /* ViewController.swift */,
-				E6A767DF25A5E70D00B38299 /* Main.storyboard */,
 				E6A767E225A5E70E00B38299 /* Assets.xcassets */,
 				E6A767E425A5E70E00B38299 /* LaunchScreen.storyboard */,
 				E6A767E725A5E70E00B38299 /* Info.plist */,
@@ -139,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6913F7626012C6B00808D01 /* Item.swift in Sources */,
 				E6A767DE25A5E70D00B38299 /* ViewController.swift in Sources */,
 				E6A767DA25A5E70D00B38299 /* AppDelegate.swift in Sources */,
 				E6A767DC25A5E70D00B38299 /* SceneDelegate.swift in Sources */,
+				E6913F7326012C4700808D01 /* Refeicao.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
